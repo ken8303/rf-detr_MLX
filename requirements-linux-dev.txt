@@ -1,0 +1,11 @@
+# Exact versions exercised on Linux x86_64, Python 3.12.
+mlx==0.32.3
+mlx-cpu==0.32.3
+numpy==2.5.4
+pillow==12.3.0
+scipy==1.18.1
+pytest==9.1.1
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0

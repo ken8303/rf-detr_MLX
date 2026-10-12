@@ -1,0 +1,10 @@
+RF-DETR MLX Lite
+
+Experimental implementation inspired by RF-DETR (Roboflow, Inc.).
+Reference: https://github.com/roboflow/rf-detr
+Inspected reference commit: eca736acab9f6fe93f2cbc82a1d9f6edfb53f0ea
+Upstream RF-DETR is licensed under Apache License 2.0.
+
+The MLX implementation uses a different convolutional backbone and a simplified
+single-scale decoder. It is not an official Roboflow release and is not compatible
+with upstream pretrained checkpoints. No upstream model weights are included.

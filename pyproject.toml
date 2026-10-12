@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfdetr-mlx-lite"
+version = "0.1.0"
+description = "Experimental lightweight RF-DETR-inspired detector in MLX"
+requires-python = ">=3.11"
+dependencies = ["mlx==0.32.3", "numpy>=1.26,<3", "Pillow>=10,<13", "scipy>=1.12,<2"]
+
+[project.optional-dependencies]
+cpu = ["mlx-cpu==0.32.3"]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+rfdetr-mlx = "rfdetr_mlx.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
